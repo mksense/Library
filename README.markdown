@@ -58,7 +58,7 @@ Since you deployed **mksense/mac** you must do the following steps to be able to
 
 * If SunSpot BaseStation is used as Gate you should use the source provided at sunSPOT-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. The basedir of your application should have the *build.xml* and *build.properties* file in order to run it. In *build.properties* file you define your main class and any additional distributives you use. Run your application by doing ``` ant host-run -Dport=/path/to/basestationPort ```
 
-* If XBee module is used as Gate you should use the source provided at xbee-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. You run yo
+* If XBee module is used as Gate you should use the source provided at xbee-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. 
 
 
 
