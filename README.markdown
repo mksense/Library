@@ -19,11 +19,11 @@ In order to program and control Arduino and sunSPOT using **mksense/Library**, y
 
 1. **Deploy mksense/mac radio stack on motes**
 
-* sunSPOT: 
+ * sunSPOT: 
   * ??
   * ??
 
-* Arduino board: 
+ * Arduino board: 
   * place the XBeeRadio file in the *libraries* subdirectory of your default Arduino sketch directory.
 
 2. **Deploy **mksense/mac radio stack on the Controller**
