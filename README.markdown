@@ -17,44 +17,39 @@ participation (PCI 2011), IEEE, Kastoria, Greece, 2011.
 
 In order to program and control Arduino and sunSPOT using **mksense/Library**, you must first deploy **mksense/mac** by executing the following steps: 
 
+1. **Deploy mksense/mac radio stack on motes**
 
-**Deploy mksense/mac radio stack on motes**
-
-
-* Sun Spot: 
+* sunSPOT: 
   * ??
   * ??
 
 * Arduino board: 
-  * place the XBeeRadio file in the libraries subdirectory of your default sketch directory.
+  * place the XBeeRadio file in the *libraries* subdirectory of your default Arduino sketch directory.
 
-**Deploy **mksense/mac radio stack on the Controller**
+2. **Deploy **mksense/mac radio stack on the Controller**
 
+On the Controller (your PC) you can use as a Gate either a sunSPOT BaseStation or a XBee module. The deploying steps for each one are:
 
-You can use **mksense/Library** either with SunSpot BaseStation gate or with XBee gate. The deploying steps are: 
-
-* SunSPOT basestation Gate: 
- * do ```ant flashlibrary``` 
- * import sunSPOT libraries in your IDE.
+* sunSPOT BaseStation Gate: 
+ * connect the BaseStation to your PC and do ```ant flashlibrary``` 
 
 * XBee Gate: 
-  * inside javaAPI folder do ```ant compile jar``` to create distributive and import this in you IDE.
-
+  * inside xbee/javaAPI folder do ```ant compile jar``` to create distributive.
 
 #**Using mksense/Library**
 
 Since you deployed **mksense/mac** you must do the following steps to be able to program and control the motes of your desire.  
 
-**mksense/Library and motes**
+**mksense/Library on motes**
 
-1. Deploy program created for SunSPOTs by doing:
- ``` ant deploy-Dport=/path/to/port ``` 
+1. Deploy program created for sunSPOTs by doing:
+ ``` ant deploy -Dport=/path/to/port ``` 
 
-2. Deploy program created for Arduino board by placing *lib.cpp* and *lib.h* files in the libraries subdirectory of your default sketch directory, and then upload to the Arduino board the sketch.pde file
+2. Deploy program created for Arduino board by placing *lib.cpp* and *lib.h* files in the *libraries* subdirectory of your default Arduino sketch directory, then upload to the Arduino board the sketch.pde file
 
-**mksense/Library and Controller**
+**mksense/Library on the Controller**
 
-* If SunSpot BaseStation is used as Gate you should use the source provided at sunSPOT-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. The basedir of your application should have the *build.xml* and *build.properties* file in order to run it. In *build.properties* file you define your main class and any additional distributives you use. Run your application by doing ``` ant host-run -Dport=/path/to/basestationPort ```
+* If sunSPOT BaseStation is used as Gate you should use the source provided at sunSPOT-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. The basedir of your application should have the *build.xml* and *build.properties* file in order to run it. In *build.properties* file you define your main class and any additional distributives you use. Run your application by doing ``` ant host-run -Dport=/path/to/basestationPort ```
 
 * If XBee module is used as Gate you should use the source provided at xbee-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. 
 
