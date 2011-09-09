@@ -45,11 +45,7 @@ Since you deployed **mkSense/mac** you must do the following steps to be able to
 1. Deploy program created for sunSPOTs by doing:
  ``` ant deploy -Dport=/path/to/port ``` 
 
-<<<<<<< HEAD
-2. Deploy program created for Arduino board by placing *lib.cpp* and *lib.h* files in the libraries subdirectory of your default sketch directory, and then upload to the Arduino board the sketch.pde file
-=======
 2. Deploy program created for Arduino board by placing *lib.cpp* and *lib.h* files in the *libraries* subdirectory of your default Arduino sketch directory, then upload to the Arduino board the sketch.pde file
->>>>>>> 0b495abcb629d9192abede1d746fed56b17d91be
 
 **mkSense/Library on the Controller**
 
