@@ -18,8 +18,8 @@ participation (PCI 2011), IEEE, Kastoria, Greece, 2011.
 In order to program and control Arduino and sunSPOT using **mksense/Library**, you must first deploy **mksense/mac** by executing the following steps: 
 
 
-Deploy **mksense/mac** radio stack on motes
---------------------------------------
+**Deploy mksense/mac radio stack on motes**
+
 
 * Sun Spot: 
   * ??
@@ -28,8 +28,8 @@ Deploy **mksense/mac** radio stack on motes
 * Arduino board: 
   * place the XBeeRadio file in the libraries subdirectory of your default sketch directory.
 
-Deploy **mksense/mac** radio stack on the Controller
-------------------------------------------------------------
+**Deploy **mksense/mac radio stack on the Controller**
+
 
 You can use **mksense/Library** either with SunSpot BaseStation gate or with XBee gate. The deploying steps are: 
 
@@ -46,7 +46,6 @@ You can use **mksense/Library** either with SunSpot BaseStation gate or with XBe
 Since you deployed **mksense/mac** you must do the following steps to be able to program and control the motes of your desire.  
 
 **mksense/Library and motes**
-----------------------------------------
 
 1. Deploy program created for SunSPOTs by doing:
  ``` ant deploy-Dport=/path/to/port ``` 
@@ -54,7 +53,6 @@ Since you deployed **mksense/mac** you must do the following steps to be able to
 2. Deploy program created for Arduino board by placing *lib.cpp* and *lib.h* files in the libraries subdirectory of your default sketch directory, and then upload to the Arduino board the sketch.pde file
 
 **mksense/Library and Controller**
------------------------------------------------------------
 
 * If SunSpot BaseStation is used as Gate you should use the source provided at sunSPOT-Gate file. Do ```ant compile jar``` to create distributive and import it in your IDE. The basedir of your application should have the *build.xml* and *build.properties* file in order to run it. In *build.properties* file you define your main class and any additional distributives you use. Run your application by doing ``` ant host-run -Dport=/path/to/basestationPort ```
 
