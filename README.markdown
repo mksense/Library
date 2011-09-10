@@ -5,7 +5,7 @@ The repository contains all the source files required to program and control Ard
 
 The most recent technical report published at:
 
-http://pci2011.teiwm.gr/
+http://ru1.cti.gr/aigaion/?page=publication&kind=single&ID=881
 
 Please cite this work in scientific papers as:
 
