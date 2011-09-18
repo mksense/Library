@@ -27,6 +27,8 @@ In order to program and control Arduino and sunSPOT using **mkSense/Library**, y
       * ant -do-jar-app
       * ant library
 
+Then connect the sunSPOT motes you are going to use and do: ant flashlibrary 
+
  * Arduino board: 
    * place the XBeeRadio file in the *libraries* subdirectory of your default Arduino sketch directory.
 
