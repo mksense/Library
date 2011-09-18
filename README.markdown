@@ -37,7 +37,7 @@ Then connect the sunSPOT motes you are going to use and do: ant flashlibrary
 On the Controller (your PC) you can use as a Gate either a sunSPOT BaseStation or a XBee module. The deploying steps for each one are:
 
 * sunSPOT BaseStation Gate: 
- * connect the BaseStation to your PC and do ```ant flashlibrary``` 
+ * Providing you have done the four steps described above, connect the BaseStation to your PC and do ```ant flashlibrary``` 
 
 * XBee Gate: 
   * inside xbee/javaAPI folder do ```ant compile jar``` to create distributive.
