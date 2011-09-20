@@ -5,7 +5,7 @@ The repository contains all the source files required to program and control Ard
 
 The most recent technical report published at:
 
-http://pci2011.teiwm.gr/
+http://ru1.cti.gr/aigaion/?page=publication&kind=single&ID=881
 
 Please cite this work in scientific papers as:
 
@@ -20,8 +20,14 @@ In order to program and control Arduino and sunSPOT using **mkSense/Library**, y
 **Deploy mkSense/mac radio stack on motes**
 
  * sunSPOT: 
-   * ??
-   * ??
+   * First inside file sunspot/sdk/multihop_common_source do: 
+      * ant jar-app
+      * ant library
+   * then inside file sunspot/sdk/spotlib_source do: 
+      * ant -do-jar-app
+      * ant library
+
+Then connect the sunSPOT motes you are going to use and do: ant flashlibrary 
 
  * Arduino board: 
    * place the XBeeRadio file in the *libraries* subdirectory of your default Arduino sketch directory.
@@ -31,7 +37,7 @@ In order to program and control Arduino and sunSPOT using **mkSense/Library**, y
 On the Controller (your PC) you can use as a Gate either a sunSPOT BaseStation or a XBee module. The deploying steps for each one are:
 
 * sunSPOT BaseStation Gate: 
- * connect the BaseStation to your PC and do ```ant flashlibrary``` 
+ * Providing you have done the four steps described above, connect the BaseStation to your PC and do ```ant flashlibrary``` 
 
 * XBee Gate: 
   * inside xbee/javaAPI folder do ```ant compile jar``` to create distributive.
